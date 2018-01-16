@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sapui5 on Michail&#39;s blog</title>
+    <link>http://michail.pw/tags/sapui5/</link>
+    <description>Recent content in Sapui5 on Michail&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Mon, 15 Jan 2018 19:13:36 +0400</lastBuildDate>
+    
+	<atom:link href="http://michail.pw/tags/sapui5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SapUI5: rich text editor</title>
+      <link>http://michail.pw/posts/sapui5/richedior/</link>
+      <pubDate>Mon, 15 Jan 2018 19:13:36 +0400</pubDate>
+      
+      <guid>http://michail.pw/posts/sapui5/richedior/</guid>
+      <description> Применение Диаграма совместимости
+Полезные ссылки  API Reference []() TinyMCE  </description>
+    </item>
+    
+  </channel>
+</rss>

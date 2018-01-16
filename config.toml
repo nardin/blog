@@ -1,5 +1,12 @@
-baseURL = "http://example.org/"
+baseURL = "http://michail.pw/"
 languageCode = "ru-ru"
-title = "My New Hugo Site"
+title = "Michail's blog"
 publishDir = "docs"
-theme = "ananke"
+theme = "hugo-theme-minos"
+
+paginate = 10
+
+[params]
+    smartToc = true
+    disqusShortname = "xxxxxx"
+    googleAnalytics = "UA-3761048-10"
