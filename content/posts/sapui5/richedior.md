@@ -1,7 +1,6 @@
 ---
 title: "SapUI5: rich text editor"
 description: ""
-date: 2018-01-15T19:13:36+04:00
 tags: []
 categories: [sapui5]
 draft: true
