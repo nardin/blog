@@ -1,10 +1,12 @@
-baseURL = "http://michail.pw/"
+baseURL = "http://nardin.github.io/blog/"
 languageCode = "ru-ru"
-title = "Michail's blog"
+title = "Have Space Suit - Will Travel"
 publishDir = "docs"
 theme = "hugo-theme-minos"
 
 paginate = 10
+
+
 
 [params]
     smartToc = true
