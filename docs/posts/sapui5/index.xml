@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Michail&#39;s blog</title>
-    <link>http://michail.pw/posts/sapui5/</link>
+    <link>http://nardin.github.io/blog/posts/sapui5/</link>
     <description>Recent content on Michail&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     
-	<atom:link href="http://michail.pw/posts/sapui5/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://nardin.github.io/blog/posts/sapui5/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
