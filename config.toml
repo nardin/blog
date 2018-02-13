@@ -1,4 +1,4 @@
-baseURL = "http://nardin.github.io/blog/"
+baseURL = "http://havespacesuit.ru/"
 languageCode = "ru-ru"
 title = "Have Space Suit - Will Travel"
 publishDir = "docs"
