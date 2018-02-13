@@ -6,7 +6,18 @@ theme = "hugo-theme-minos"
 
 paginate = 10
 
+[[menu.main]]
+    name = "Прочитанные книги"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -110
+    url = "/book/"
 
+[[menu.main]]
+    name = "Обо мне"
+    pre = "<i class='fa fa-heart'></i>"
+    weight = -100
+    identifier = "about"
+    url = "/about/"
 
 [params]
     smartToc = true
