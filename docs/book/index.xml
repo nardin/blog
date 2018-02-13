@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Have Space Suit - Will Travel</title>
-    <link>http://nardin.github.io/blog/</link>
-    <description>Recent content on Have Space Suit - Will Travel</description>
+    <title>Прочитанные книги on Have Space Suit - Will Travel</title>
+    <link>http://nardin.github.io/blog/book/</link>
+    <description>Recent content in Прочитанные книги on Have Space Suit - Will Travel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     
-	<atom:link href="http://nardin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://nardin.github.io/blog/book/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

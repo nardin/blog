@@ -1097,3 +1097,31 @@ pre .php .xml {
   font-family: 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
   text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
 }
+
+
+
+.book {
+  clear: both;
+  padding-bottom: 20px;
+}
+
+.book img {
+  padding: 4px;
+  margin: 0 7px 2px 0;
+  width: 200px;
+  display: inline;
+  float: left;
+  /*border: 1px solid black;*/
+}
+
+.book .title {
+
+}
+
+.book .publisher a{
+ float: right;
+}
+
+.book .publisher a img{
+  width: 70px;
+ }
