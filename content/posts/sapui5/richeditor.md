@@ -1,9 +1,9 @@
 ---
 title: "SapUI5: rich text editor"
-description: ""
+description: "sap.ui.richtexteditor - это обертка tinymce 3 или tinymce 4. Не является частью OpenUI5."
 tags: []
 categories: [sapui5]
-draft: true
+draft: false
 ---
 
 # Общее описание
@@ -23,9 +23,6 @@ SAP обычно дает четкие указания когда какой к
 С версии 1.48 появилась возможность использовать ``Custom Toolbar`` по сути это Toolbar написаный на SapUI5 и синхронизующий свое состояние и состояние редактора. (В версии до 1.54 не синхронизуютра Images и Links)
 
 ![TinyMCE 4](/images/posts/sapui5/richeditor/custom.png)
-
-
-
 
 # Полезные ссылки
 * [API Reference](https://sapui5.hana.ondemand.com/#/api/sap.ui.richtexteditor)
