@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Have Space Suit - Will Travel</title>
-    <link>http://havespacesuit.ru/</link>
-    <description>Recent content on Have Space Suit - Will Travel</description>
+    <title>Sapui5 on Have Space Suit - Will Travel</title>
+    <link>http://havespacesuit.ru/categories/sapui5/</link>
+    <description>Recent content in Sapui5 on Have Space Suit - Will Travel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <lastBuildDate>Mon, 19 Feb 2018 19:13:36 +0400</lastBuildDate>
     
-	<atom:link href="http://havespacesuit.ru/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://havespacesuit.ru/categories/sapui5/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,24 +21,6 @@
 Тип задается свойством editorType у молчанию TinyMCE но я рекомендовал бы использовать TinyMCE4 (Список допустимых значений)
 SAP обычно дает четкие указания когда какой контрол использовать, по сути richtexteditor не разрешено использовать с модулем sap.m но для декстопов сделано исключение: диаграма совместимости
 Custom Toolbar С версии 1.48 появилась возможность использовать Custom Toolbar по сути это Toolbar написаный на SapUI5 и синхронизующий свое состояние и состояние редактора.</description>
-    </item>
-    
-    <item>
-      <title>Книги за 2018: Технические</title>
-      <link>http://havespacesuit.ru/book/2018_tech/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://havespacesuit.ru/book/2018_tech/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Книги за 2018: Художественные</title>
-      <link>http://havespacesuit.ru/book/2018/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://havespacesuit.ru/book/2018/</guid>
-      <description></description>
     </item>
     
   </channel>

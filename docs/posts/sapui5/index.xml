@@ -6,9 +6,22 @@
     <description>Recent content on Have Space Suit - Will Travel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
+    <lastBuildDate>Mon, 19 Feb 2018 19:13:36 +0400</lastBuildDate>
     
 	<atom:link href="http://havespacesuit.ru/posts/sapui5/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SapUI5: rich text editor</title>
+      <link>http://havespacesuit.ru/posts/sapui5/richeditor/</link>
+      <pubDate>Mon, 19 Feb 2018 19:13:36 +0400</pubDate>
+      
+      <guid>http://havespacesuit.ru/posts/sapui5/richeditor/</guid>
+      <description>Общее описание sap.ui.richtexteditor - это обертка tinymce 3 или tinymce 4. Не является частью OpenUI5.
+Тип задается свойством editorType у молчанию TinyMCE но я рекомендовал бы использовать TinyMCE4 (Список допустимых значений)
+SAP обычно дает четкие указания когда какой контрол использовать, по сути richtexteditor не разрешено использовать с модулем sap.m но для декстопов сделано исключение: диаграма совместимости
+Custom Toolbar С версии 1.48 появилась возможность использовать Custom Toolbar по сути это Toolbar написаный на SapUI5 и синхронизующий свое состояние и состояние редактора.</description>
+    </item>
     
   </channel>
 </rss>

@@ -93,7 +93,7 @@ input,
 button {
   margin: 0;
   padding: 0;
-  font: 16px 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+  font: 16px '72', serif;
 }
 input::-moz-focus-inner,
 button::-moz-focus-inner {
@@ -114,7 +114,7 @@ body,
 }
 body {
   background: #fff;
-  font: 16px 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+  font: 16px '72',serif;
   -webkit-text-size-adjust: 100%;
 }
 .outer {
@@ -182,7 +182,7 @@ a.article-title,
 .article-entry .gist .gist-file .gist-meta a,
 .layout-wrap-inner .category-list a,
 .tag-cloud a {
-  color: #111;
+  color: #427CAC;
   text-decoration: none;
   border-bottom: 1px dotted transparent;
 }
@@ -294,7 +294,7 @@ a.article-title:hover,
   overflow: hidden;
 }
 #main-nav {
-  float: left;
+  float: right;
   margin-left: -15px;
 }
 .main-nav-link,
@@ -311,7 +311,8 @@ a.article-title:hover,
   padding: 20px 15px;
 }
 .main-nav-link {
-  font-weight: 600;
+  font-weight: 200;
+  font-size: 1.2em;
 }
 @media screen and (max-width: 839px) {
   .main-nav-link {
@@ -323,7 +324,7 @@ a.article-title:hover,
   display: none;
   font-size: 16px;
   margin-left: -15px;
-  font-family: FontAwesome;
+  font-family: '72';
 }
 #main-nav-toggle:before {
   content: "\f0c9";
@@ -392,7 +393,7 @@ a.article-title:hover,
 .search-form-submit {
   float: left;
   padding: 0;
-  font-family: FontAwesome;
+  font-family: '72';
   border: none;
   background: none;
   cursor: pointer;
@@ -448,8 +449,14 @@ a.article-title:hover,
   margin-bottom: 10px;
 }
 .article-title {
+  color: #427CAC;
+  padding-top: 25px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  text-transform: none;
+  text-shadow: 0px 1px 0px white;
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 200;
   line-height: 1em;
 }
 .article-entry {
@@ -475,9 +482,10 @@ a.article-title:hover,
 .article-entry h4,
 .article-entry h5,
 .article-entry h6 {
-  font-weight: 600;
+  font-weight: 200;
   line-height: 1.4em;
   margin: 1em 0;
+  color: #427CAC;
 }
 .article-entry ul,
 .article-entry ol,
@@ -510,7 +518,7 @@ a.article-title:hover,
   padding: 10px 0;
 }
 .article-entry blockquote {
-  font-family: 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+  font-family: '72', serif;
   font-size: 1.4em;
   margin: 1.4em 20px;
   text-align: center;
@@ -1088,13 +1096,13 @@ pre .php .xml {
 .fancybox-skin {
   padding: 0 !important;
   border-radius: 0;
-  font-family: 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+  font-family: '72', serif;
 }
 .fancybox-skin .fancybox-title .child {
   background: none;
   font-weight: 400;
   font-size: 16px;
-  font-family: 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+  font-family: '72', serif;
   text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
 }
 

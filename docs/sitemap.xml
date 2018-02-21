@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://havespacesuit.ru/posts/sapui5/richeditor/</loc>
+    <lastmod>2018-02-19T19:13:36+04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://havespacesuit.ru/posts/sapui5/</loc>
+    <lastmod>2018-02-19T19:13:36+04:00</lastmod>
   </url>
   
   <url>
@@ -13,11 +19,18 @@
   
   <url>
     <loc>http://havespacesuit.ru/</loc>
+    <lastmod>2018-02-19T19:13:36+04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://havespacesuit.ru/posts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://havespacesuit.ru/categories/sapui5/</loc>
+    <lastmod>2018-02-19T19:13:36+04:00</lastmod>
     <priority>0</priority>
   </url>
   
