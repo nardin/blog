@@ -2,6 +2,7 @@
 title: "SapUI5: rich text editor"
 description: "sap.ui.richtexteditor - это обертка tinymce 3 или tinymce 4. Не является частью OpenUI5."
 tags: []
+date: 2018-02-19T19:13:36+04:00
 categories: [sapui5]
 draft: false
 ---

@@ -2,7 +2,7 @@ baseURL = "http://havespacesuit.ru/"
 languageCode = "ru-ru"
 title = "Have Space Suit - Will Travel"
 publishDir = "docs"
-theme = "hugo-theme-minos"
+theme = "hugo-theme-my"
 
 paginate = 10
 
