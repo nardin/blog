@@ -6,10 +6,23 @@
     <description>Recent content on Have Space Suit - Will Travel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Mon, 19 Feb 2018 19:13:36 +0400</lastBuildDate>
+    <lastBuildDate>Mon, 05 Mar 2018 19:13:36 +0400</lastBuildDate>
     
 	<atom:link href="http://havespacesuit.ru/posts/sapui5/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SapUI5: Control - контрол из контролов</title>
+      <link>http://havespacesuit.ru/posts/sapui5/control/custom/</link>
+      <pubDate>Mon, 05 Mar 2018 19:13:36 +0400</pubDate>
+      
+      <guid>http://havespacesuit.ru/posts/sapui5/control/custom/</guid>
+      <description>Путевые заметки и набитые шишки&amp;hellip;
+Не теряйте родителей Если контрол создается через new то незабудьте указать родителя.
+ this.button = new Button( this.setParent(this); // не забудьте указать родителя  Стоит учесть что если добавить контрол в агреган то родитель изменится, причем некоторые контролы при этом выбросыт исключение.
+Пробрасываем binding Часто требуется пробросить биндинг на внутрение контролы. Сделать это переопределением методов _bindProperty и _bindAggregation
+_bindProperty: function (sName, oBindingInfo) { if (sName === &#39;value&#39;) { this.</description>
+    </item>
     
     <item>
       <title>SapUI5: rich text editor</title>
@@ -21,19 +34,6 @@
 Тип задается свойством editorType по умолчанию TinyMCE но я рекомендовал бы использовать TinyMCE4 (Список допустимых значений)
 SAP обычно дает четкие указания когда какой контрол использовать, по сути richtexteditor не разрешено использовать с модулем sap.m но для декстопов сделано исключение: диаграма совместимости
 Custom Toolbar С версии 1.48 появилась возможность использовать Custom Toolbar по сути это Toolbar написаный на SapUI5 и синхронизующий свое состояние и состояние редактора.</description>
-    </item>
-    
-    <item>
-      <title>SapUI5: Control - контрол из контролов</title>
-      <link>http://havespacesuit.ru/posts/sapui5/control/custom/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://havespacesuit.ru/posts/sapui5/control/custom/</guid>
-      <description>Создаем контрол из контролов Путевые заметки и набитые шишки&amp;hellip;
-Не теряйте родителей Если контрол создается через new то незабудьте указать родителя.
- this.button = new Button( this.setParent(this); // не забудьте указать родителя  Стоит учесть что если добавить контрол в агреган то родитель изменится, причем некоторые контролы при этом выбросыт исключение.
-Пробрасываем binding Часто требуется пробросить биндинг на внутрение контролы. Сделать это переопределением методов _bindProperty и _bindAggregation
-_bindProperty: function (sName, oBindingInfo) { if (sName === &#39;value&#39;) { this.</description>
     </item>
     
   </channel>
