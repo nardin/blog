@@ -10,7 +10,7 @@ draft: false
 # Общее описание
 sap.ui.richtexteditor - это обертка tinymce 3 или tinymce 4. Не является частью OpenUI5.
 
-Тип задается свойством ``editorType`` у молчанию ``TinyMCE`` но я рекомендовал бы использовать ``TinyMCE4`` ([Список допустимых значений](https://sapui5.hana.ondemand.com/#/api/sap.ui.richtexteditor.EditorType/overview))
+Тип задается свойством ``editorType`` по умолчанию ``TinyMCE`` но я рекомендовал бы использовать ``TinyMCE4`` ([Список допустимых значений](https://sapui5.hana.ondemand.com/#/api/sap.ui.richtexteditor.EditorType/overview))
 
 SAP обычно дает четкие указания когда какой контрол использовать, по сути richtexteditor не разрешено использовать с модулем ``sap.m`` но для декстопов сделано исключение: 
 [диаграма совместимости](https://sapui5.hana.ondemand.com/#/topic/363cd16eba1f45babe3f661f321a7820)

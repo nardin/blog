@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SapUI5: rich text editor // Have Space Suit - Will Travel</title>
+    <title>SapUI5: Control - контрол из контролов // Have Space Suit - Will Travel</title>
 
         <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-        <meta property="og:title" content="SapUI5: rich text editor" />
+        <meta property="og:title" content="SapUI5: Control - контрол из контролов" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="http://havespacesuit.ru/posts/sapui5/richeditor/" />
+    <meta property="og:url" content="http://havespacesuit.ru/posts/sapui5/control/custom/" />
     
 
     <link href="" rel="alternate" type="application/rss+xml" title="Have Space Suit - Will Travel" />
@@ -56,12 +56,12 @@
     <div class="article-inner">
         
         <header class="article-header">
-            <h1 class="article-title" itemprop="name">SapUI5: rich text editor</h1>
+            <h1 class="article-title" itemprop="name">SapUI5: Control - контрол из контролов</h1>
         </header>
         
         <div class="article-meta">
-            <a href="/posts/sapui5/richeditor/" class="article-date">
-                <time datetime='2018-02-19T19:13:36.000&#43;04:00' itemprop="datePublished">2018-02-19</time>
+            <a href="/posts/sapui5/control/custom/" class="article-date">
+                <time datetime='0001-01-01T00:00:00.000&#43;00:00' itemprop="datePublished">0001-01-01</time>
             </a>
             
             
@@ -76,38 +76,42 @@
             
             
             <div class="article-comment-link-wrap">
-                <a href="/posts/sapui5/richeditor/#disqus_thread" class="article-comment-link">Comments</a>
+                <a href="/posts/sapui5/control/custom/#disqus_thread" class="article-comment-link">Comments</a>
             </div>
             
         </div>
         <div class="article-entry" itemprop="articleBody">
             
 
-<h1 id="общее-описание">Общее описание</h1>
+<h1 id="создаем-контрол-из-контролов">Создаем контрол из контролов</h1>
 
-<p>sap.ui.richtexteditor - это обертка tinymce 3 или tinymce 4. Не является частью OpenUI5.</p>
+<p>Путевые заметки и набитые шишки&hellip;</p>
 
-<p>Тип задается свойством <code>editorType</code> по умолчанию <code>TinyMCE</code> но я рекомендовал бы использовать <code>TinyMCE4</code> (<a href="https://sapui5.hana.ondemand.com/#/api/sap.ui.richtexteditor.EditorType/overview">Список допустимых значений</a>)</p>
+<h2 id="не-теряйте-родителей">Не теряйте родителей</h2>
 
-<p>SAP обычно дает четкие указания когда какой контрол использовать, по сути richtexteditor не разрешено использовать с модулем <code>sap.m</code> но для декстопов сделано исключение:
-<a href="https://sapui5.hana.ondemand.com/#/topic/363cd16eba1f45babe3f661f321a7820">диаграма совместимости</a></p>
+<p>Если контрол создается через new то незабудьте указать родителя.</p>
 
-<p><img src="/images/posts/sapui5/richeditor/tmc3.png" alt="TinyMCE" /></p>
+<pre><code>  this.button = new Button(
+  this.setParent(this); // не забудьте указать родителя
+</code></pre>
 
-<p><img src="/images/posts/sapui5/richeditor/tmc4.png" alt="TinyMCE 4" /></p>
+<p>Стоит учесть что если добавить контрол в агреган то родитель изменится, причем некоторые контролы при этом выбросыт исключение.</p>
 
-<h1 id="custom-toolbar">Custom Toolbar</h1>
+<h2 id="пробрасываем-binding">Пробрасываем binding</h2>
 
-<p>С версии 1.48 появилась возможность использовать <code>Custom Toolbar</code> по сути это Toolbar написаный на SapUI5 и синхронизующий свое состояние и состояние редактора. (В версии до 1.54 не синхронизуютра Images и Links)</p>
+<p>Часто требуется пробросить биндинг на внутрение контролы. Сделать это переопределением методов <code>_bindProperty</code> и <code>_bindAggregation</code></p>
 
-<p><img src="/images/posts/sapui5/richeditor/custom.png" alt="TinyMCE 4" /></p>
+<pre><code>_bindProperty: function (sName, oBindingInfo) {
+      if (sName === 'value') {
+        this.button.bindProperty('text', oBindingInfo);
+      }
+      
+      Control.prototype._bindProperty.call(this, sName, oBindingInfo); // не забудте вызвать базовый
+    },
+</code></pre>
 
-<h1 id="полезные-ссылки">Полезные ссылки</h1>
-
-<ul>
-<li><a href="https://sapui5.hana.ondemand.com/#/api/sap.ui.richtexteditor">API Reference</a></li>
-<li><a href="https://www.tinymce.com/">TinyMCE</a></li>
-</ul>
+<p>Выглядит как хак но это используется в самом SapUI5
+<a href="https://github.com/SAP/openui5/blob/f8c120bb2515aa20ba313fa3439c66aa61060ef3/src/sap.m/src/sap/m/ListBase.js#L573">пример из ListBase</a></p>
 
         </div>
 
@@ -117,9 +121,11 @@
             <h3>Contents</h3>
             <nav id="TableOfContents">
 <ul>
-<li><a href="#общее-описание">Общее описание</a></li>
-<li><a href="#custom-toolbar">Custom Toolbar</a></li>
-<li><a href="#полезные-ссылки">Полезные ссылки</a></li>
+<li><a href="#создаем-контрол-из-контролов">Создаем контрол из контролов</a>
+<ul>
+<li><a href="#не-теряйте-родителей">Не теряйте родителей</a></li>
+<li><a href="#пробрасываем-binding">Пробрасываем binding</a></li>
+</ul></li>
 </ul>
 </nav>
         </div>
@@ -168,12 +174,34 @@
 
 
         
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="http://havespacesuit.ru//tags/sapui5-control">sapui5 control
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="http://havespacesuit.ru//tags/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8">заметки
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+        
     </div>
     <nav id="article-nav">
     
+    <a href="/posts/sapui5/richeditor/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            SapUI5: rich text editor
+        </div>
+    </a>
     
-    <a href="/posts/sapui5/control/custom/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">SapUI5: Control - контрол из контролов&nbsp;<span>&gt;</span></div>
+    
+    <a href="/book/2018_tech/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Книги за 2018: Технические&nbsp;<span>&gt;</span></div>
     </a>
     
 </nav>
