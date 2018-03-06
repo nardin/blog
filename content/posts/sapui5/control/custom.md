@@ -13,8 +13,8 @@ draft: false
 Если контрол создается через new то незабудьте указать родителя.
 
 ```
-  this.button = new Button(
-  this.setParent(this); // не забудьте указать родителя
+this.button = new Button(
+this.setParent(this); // не забудьте указать родителя
 ```
 Стоит учесть что если добавить контрол в агрегат то родитель изменится, причем некоторые контролы при этом выбросят исключение.
 
@@ -22,13 +22,15 @@ draft: false
 Часто требуется пробросить биндинг на внутрение контролы. Сделать это переопределением методов ``_bindProperty`` и ``_bindAggregation``
 ```
 _bindProperty: function (sName, oBindingInfo) {
-      if (sName === 'value') {
-        this.button.bindProperty('text', oBindingInfo);
-      }
-      
-      // не забудте вызвать базовый
-      Control.prototype._bindProperty.call(this, sName, oBindingInfo);
-    },
+  if (sName === 'value') {
+    this.button.bindProperty('text', oBindingInfo);
+  }
+  
+  // не забудте вызвать базовый
+  Control.prototype._bindProperty.call(this, sName, oBindingInfo);
+},
 ```
 Выглядит как хак но это используется в самом SapUI5
 [пример из ListBase](https://github.com/SAP/openui5/blob/f8c120bb2515aa20ba313fa3439c66aa61060ef3/src/sap.m/src/sap/m/ListBase.js#L573)
+
+# R или L

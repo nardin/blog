@@ -89,8 +89,8 @@
 
 <p>Если контрол создается через new то незабудьте указать родителя.</p>
 
-<pre><code>  this.button = new Button(
-  this.setParent(this); // не забудьте указать родителя
+<pre><code>this.button = new Button(
+this.setParent(this); // не забудьте указать родителя
 </code></pre>
 
 <p>Стоит учесть что если добавить контрол в агрегат то родитель изменится, причем некоторые контролы при этом выбросят исключение.</p>
@@ -100,17 +100,19 @@
 <p>Часто требуется пробросить биндинг на внутрение контролы. Сделать это переопределением методов <code>_bindProperty</code> и <code>_bindAggregation</code></p>
 
 <pre><code>_bindProperty: function (sName, oBindingInfo) {
-      if (sName === 'value') {
-        this.button.bindProperty('text', oBindingInfo);
-      }
-      
-      // не забудте вызвать базовый
-      Control.prototype._bindProperty.call(this, sName, oBindingInfo);
-    },
+  if (sName === 'value') {
+    this.button.bindProperty('text', oBindingInfo);
+  }
+  
+  // не забудте вызвать базовый
+  Control.prototype._bindProperty.call(this, sName, oBindingInfo);
+},
 </code></pre>
 
 <p>Выглядит как хак но это используется в самом SapUI5
 <a href="https://github.com/SAP/openui5/blob/f8c120bb2515aa20ba313fa3439c66aa61060ef3/src/sap.m/src/sap/m/ListBase.js#L573">пример из ListBase</a></p>
+
+<h1 id="r-или-l">R или L</h1>
 
         </div>
 
@@ -122,6 +124,7 @@
 <ul>
 <li><a href="#не-теряйте-родителей">Не теряйте родителей</a></li>
 <li><a href="#пробрасываем-binding">Пробрасываем binding</a></li>
+<li><a href="#r-или-l">R или L</a></li>
 </ul>
 </nav>
         </div>

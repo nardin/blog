@@ -19,7 +19,7 @@
       <guid>http://havespacesuit.ru/posts/sapui5/control/custom/</guid>
       <description>Путевые заметки и набитые шишки&amp;hellip;
 Не теряйте родителей Если контрол создается через new то незабудьте указать родителя.
- this.button = new Button( this.setParent(this); // не забудьте указать родителя  Стоит учесть что если добавить контрол в агрегат то родитель изменится, причем некоторые контролы при этом выбросят исключение.
+this.button = new Button( this.setParent(this); // не забудьте указать родителя  Стоит учесть что если добавить контрол в агрегат то родитель изменится, причем некоторые контролы при этом выбросят исключение.
 Пробрасываем binding Часто требуется пробросить биндинг на внутрение контролы. Сделать это переопределением методов _bindProperty и _bindAggregation
 _bindProperty: function (sName, oBindingInfo) { if (sName === &#39;value&#39;) { this.</description>
     </item>
