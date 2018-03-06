@@ -16,7 +16,7 @@ draft: false
   this.button = new Button(
   this.setParent(this); // не забудьте указать родителя
 ```
-Стоит учесть что если добавить контрол в агреган то родитель изменится, причем некоторые контролы при этом выбросыт исключение.
+Стоит учесть что если добавить контрол в агрегат то родитель изменится, причем некоторые контролы при этом выбросят исключение.
 
 # Пробрасываем binding
 Часто требуется пробросить биндинг на внутрение контролы. Сделать это переопределением методов ``_bindProperty`` и ``_bindAggregation``
@@ -26,7 +26,8 @@ _bindProperty: function (sName, oBindingInfo) {
         this.button.bindProperty('text', oBindingInfo);
       }
       
-      Control.prototype._bindProperty.call(this, sName, oBindingInfo); // не забудте вызвать базовый
+      // не забудте вызвать базовый
+      Control.prototype._bindProperty.call(this, sName, oBindingInfo);
     },
 ```
 Выглядит как хак но это используется в самом SapUI5

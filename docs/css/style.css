@@ -160,9 +160,9 @@ body {
 }
 .logo-text {
   width: auto;
-  color: #000;
+  color: #fff;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 57px;
   margin-right: 25px;
   text-decoration: none;
@@ -279,6 +279,8 @@ a.article-title:hover,
 #header {
   font-size: 14px;
   position: relative;
+  background-color: #253845;
+  color: #fff;
   border-bottom: 1px solid #ddd;
 }
 #header.mobile-on #main-nav,
@@ -301,7 +303,7 @@ a.article-title:hover,
 #main-nav-toggle,
 .search-form-submit {
   float: left;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
@@ -813,6 +815,7 @@ a.article-title:hover,
   font-weight: 600;
 }
 #footer-info {
+  color: #999999;
   line-height: 1.4em;
   font-size: 0.85em;
 }

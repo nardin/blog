@@ -93,7 +93,7 @@
   this.setParent(this); // не забудьте указать родителя
 </code></pre>
 
-<p>Стоит учесть что если добавить контрол в агреган то родитель изменится, причем некоторые контролы при этом выбросыт исключение.</p>
+<p>Стоит учесть что если добавить контрол в агрегат то родитель изменится, причем некоторые контролы при этом выбросят исключение.</p>
 
 <h1 id="пробрасываем-binding">Пробрасываем binding</h1>
 
@@ -104,7 +104,8 @@
         this.button.bindProperty('text', oBindingInfo);
       }
       
-      Control.prototype._bindProperty.call(this, sName, oBindingInfo); // не забудте вызвать базовый
+      // не забудте вызвать базовый
+      Control.prototype._bindProperty.call(this, sName, oBindingInfo);
     },
 </code></pre>
 
