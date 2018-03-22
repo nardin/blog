@@ -112,7 +112,29 @@ this.setParent(this); // не забудьте указать родителя
 <p>Выглядит как хак но это используется в самом SapUI5
 <a href="https://github.com/SAP/openui5/blob/f8c120bb2515aa20ba313fa3439c66aa61060ef3/src/sap.m/src/sap/m/ListBase.js#L573">пример из ListBase</a></p>
 
-<h1 id="r-или-l">R или L</h1>
+<h1 id="rtl-языки">RTL языки</h1>
+
+<p>Не стоит забывать что есть языки которые пишутся справа налево.
+<code>sap.ui.getCore().getConfiguration().getRTL()</code> позволяет получит RTL-ли текущий язык.</p>
+
+<pre><code>  if (!sap.ui.getCore().getConfiguration().getRTL()) {
+    oRm.write('&lt;div style=&quot;float:right&quot;&gt;');
+  } else {
+    oRm.write('&lt;div style=&quot;float:left&quot;&gt;');
+  }
+</code></pre>
+
+<p>Еще один не маловажный пункт, не стоит забывать про тег <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/bdi">bdi</a>. Он нужен если в RTL текcте есть вставки LTR языка (наприме данные из базы: название городов, имена, фамилии). Каждый браузер производит разворот написания по своему :(</p>
+
+<p>Например:
+На английском:<code>Template: (Test) Welcome message</code> будет после переключения локали на Arabic <code>القالب: (Test) Welcome message</code></p>
+
+<p>При этом отобразится это по разному:</p>
+
+<ul>
+<li>Chrome: <code>Test) Welcome message (:القالب</code></li>
+<li>FireFox: <code>Welcome message (Test) :القالب</code></li>
+</ul>
 
         </div>
 
@@ -124,7 +146,7 @@ this.setParent(this); // не забудьте указать родителя
 <ul>
 <li><a href="#не-теряйте-родителей">Не теряйте родителей</a></li>
 <li><a href="#пробрасываем-binding">Пробрасываем binding</a></li>
-<li><a href="#r-или-l">R или L</a></li>
+<li><a href="#rtl-языки">RTL языки</a></li>
 </ul>
 </nav>
         </div>

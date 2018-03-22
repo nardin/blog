@@ -33,4 +33,23 @@ _bindProperty: function (sName, oBindingInfo) {
 Выглядит как хак но это используется в самом SapUI5
 [пример из ListBase](https://github.com/SAP/openui5/blob/f8c120bb2515aa20ba313fa3439c66aa61060ef3/src/sap.m/src/sap/m/ListBase.js#L573)
 
-# R или L
+# RTL языки
+Не стоит забывать что есть языки которые пишутся справа налево.
+``sap.ui.getCore().getConfiguration().getRTL()`` позволяет получит RTL-ли текущий язык.
+```
+  if (!sap.ui.getCore().getConfiguration().getRTL()) {
+    oRm.write('<div style="float:right">');
+  } else {
+    oRm.write('<div style="float:left">');
+  }
+```
+
+Еще один не маловажный пункт, не стоит забывать про тег [bdi](https://developer.mozilla.org/ru/docs/Web/HTML/Element/bdi). Он нужен если в RTL текcте есть вставки LTR языка (наприме данные из базы: название городов, имена, фамилии). Каждый браузер производит разворот написания по своему :(
+
+Например: 
+На английском:``Template: (Test) Welcome message`` будет после переключения локали на Arabic ``القالب: (Test) Welcome message``
+
+При этом отобразится это по разному:
+
+* Chrome: ``Test) Welcome message (:القالب``
+* FireFox: ``Welcome message (Test) :القالب``
