@@ -6,10 +6,22 @@
     <description>Recent content on Have Space Suit - Will Travel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Mon, 05 Mar 2018 19:13:36 +0400</lastBuildDate>
+    <lastBuildDate>Fri, 27 Apr 2018 01:13:36 +0400</lastBuildDate>
     
 	<atom:link href="http://havespacesuit.ru/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Заметки: SapUI5: Загадка с темой beliz</title>
+      <link>http://havespacesuit.ru/posts/sapui5/note/themes/</link>
+      <pubDate>Fri, 27 Apr 2018 01:13:36 +0400</pubDate>
+      
+      <guid>http://havespacesuit.ru/posts/sapui5/note/themes/</guid>
+      <description>Начало загадки Если взять SDK с http://openui5.org, то мы имеем стиль :
+html.sap-desktop .sapMIBar.sapMFooter-CTX { background-color: #ffffff; border-top: 1px solid #ebebeb; } html.sap-desktop .sapContrast .sapMIBar.sapMFooter-CTX,html.sap-desktop .sapContrast.sapMIBar.sapMFooter-CTX { background-color: #2f3c48; border-top: 1px solid #475b6d; }  А если собрать самому из исходников с github (grunt build):
+html.sap-desktop .sapMIBar.sapMFooter-CTX { background-color: #2f3c48; border-top: 1px solid #475b6d; }  Цвет конечно правильный в обоих случаях но это интерестно как так?
+Причем в less файлах этого раздвоения нет и более того если собрать less без плагина less-openui5.</description>
+    </item>
     
     <item>
       <title>SapUI5: Control - контрол из контролов</title>
@@ -34,18 +46,6 @@ _bindProperty: function (sName, oBindingInfo) { if (sName === &#39;value&#39;) {
 Тип задается свойством editorType по умолчанию TinyMCE но я рекомендовал бы использовать TinyMCE4 (Список допустимых значений)
 SAP обычно дает четкие указания когда какой контрол использовать, по сути richtexteditor не разрешено использовать с модулем sap.m но для декстопов сделано исключение: диаграма совместимости
 Custom Toolbar С версии 1.48 появилась возможность использовать Custom Toolbar по сути это Toolbar написаный на SapUI5 и синхронизующий свое состояние и состояние редактора.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://havespacesuit.ru/posts/sapui5/note/themes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://havespacesuit.ru/posts/sapui5/note/themes/</guid>
-      <description>title: &amp;ldquo;Заметки: SapUI5: Загадка с темой beliz&amp;rdquo; description: &amp;ldquo;&amp;rdquo; tags: [&amp;ldquo;sapui5 control&amp;rdquo;, &amp;ldquo;заметки&amp;rdquo;] categories: [sapui5]
-draft: false Начало загадки Если взять SDK с http://openui5.org, то мы имеем стиль :
-html.sap-desktop .sapMIBar.sapMFooter-CTX { background-color: #ffffff; border-top: 1px solid #ebebeb; } html.sap-desktop .sapContrast .sapMIBar.sapMFooter-CTX,html.sap-desktop .sapContrast.sapMIBar.sapMFooter-CTX { background-color: #2f3c48; border-top: 1px solid #475b6d; }  А если собрать самому из исходников с github (grunt build):
-html.sap-desktop .sapMIBar.sapMFooter-CTX { background-color: #2f3c48; border-top: 1px solid #475b6d; }  Цвет конечно правильный в обоих случаях но это интерестно как так?</description>
     </item>
     
     <item>

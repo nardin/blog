@@ -1,5 +1,7 @@
+---
 title: "Заметки: SapUI5: Загадка с темой beliz"
-description: ""
+description: "Странная загадка с темой beliz"
+date: 2018-04-27T01:13:36+04:00
 tags: ["sapui5 control", "заметки"]
 categories: [sapui5]
 draft: false
