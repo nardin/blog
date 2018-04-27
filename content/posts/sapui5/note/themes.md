@@ -9,14 +9,14 @@ draft: false
 
 # Начало загадки
 
-Если взять SDK с [http://openui5.org](http://openui5.org),
-то мы имеем стиль :
+Если взять SDK с [http://openui5.org](http://openui5.org), то мы имеем стиль :
 ```
 html.sap-desktop .sapMIBar.sapMFooter-CTX {
     background-color: #ffffff;
     border-top: 1px solid #ebebeb;
 }
-html.sap-desktop .sapContrast .sapMIBar.sapMFooter-CTX,html.sap-desktop .sapContrast.sapMIBar.sapMFooter-CTX {
+html.sap-desktop .sapContrast .sapMIBar.sapMFooter-CTX
+,html.sap-desktop .sapContrast.sapMIBar.sapMFooter-CTX {
     background-color: #2f3c48;
     border-top: 1px solid #475b6d;
 }
