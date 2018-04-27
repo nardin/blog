@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SapUI5: rich text editor // Have Space Suit - Will Travel</title>
+    <title> // Have Space Suit - Will Travel</title>
 
         <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-        <meta property="og:title" content="SapUI5: rich text editor" />
+        <meta property="og:title" content="" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="http://havespacesuit.ru/posts/sapui5/richeditor/" />
+    <meta property="og:url" content="http://havespacesuit.ru/posts/sapui5/note/themes/" />
     
 
     <link href="" rel="alternate" type="application/rss+xml" title="Have Space Suit - Will Travel" />
@@ -55,59 +55,96 @@
         <article class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
-        <header class="article-header">
-            <h1 class="article-title" itemprop="name">SapUI5: rich text editor</h1>
-        </header>
-        
         <div class="article-meta">
-            <a href="/posts/sapui5/richeditor/" class="article-date">
-                <time datetime='2018-02-19T19:13:36.000&#43;04:00' itemprop="datePublished">2018-02-19</time>
+            <a href="/posts/sapui5/note/themes/" class="article-date">
+                <time datetime='0001-01-01T00:00:00.000&#43;00:00' itemprop="datePublished">0001-01-01</time>
             </a>
             
             
-            <div class="post-categories">
-                <div class="article-category">
-                    
-                    
-                    <a class="article-category-link" href="http://havespacesuit.ru//categories/sapui5">sapui5</a>
-                    
-                </div>
-            </div>
-            
             
             <div class="article-comment-link-wrap">
-                <a href="/posts/sapui5/richeditor/#disqus_thread" class="article-comment-link">Comments</a>
+                <a href="/posts/sapui5/note/themes/#disqus_thread" class="article-comment-link">Comments</a>
             </div>
             
         </div>
         <div class="article-entry" itemprop="articleBody">
             
 
-<h1 id="общее-описание">Общее описание</h1>
+<p>title: &ldquo;Заметки: SapUI5: Загадка с темой beliz&rdquo;
+description: &ldquo;&rdquo;
+tags: [&ldquo;sapui5 control&rdquo;, &ldquo;заметки&rdquo;]
+categories: [sapui5]</p>
 
-<p>sap.ui.richtexteditor - это обертка tinymce 3 или tinymce 4. Не является частью OpenUI5.</p>
+<h2 id="draft-false">draft: false</h2>
 
-<p>Тип задается свойством <code>editorType</code> по умолчанию <code>TinyMCE</code> но я рекомендовал бы использовать <code>TinyMCE4</code> (<a href="https://sapui5.hana.ondemand.com/#/api/sap.ui.richtexteditor.EditorType/overview">Список допустимых значений</a>)</p>
+<h1 id="начало-загадки">Начало загадки</h1>
 
-<p>SAP обычно дает четкие указания когда какой контрол использовать, по сути richtexteditor не разрешено использовать с модулем <code>sap.m</code> но для декстопов сделано исключение:
-<a href="https://sapui5.hana.ondemand.com/#/topic/363cd16eba1f45babe3f661f321a7820">диаграма совместимости</a></p>
+<p>Если взять SDK с <a href="http://openui5.org">http://openui5.org</a>,
+то мы имеем стиль :</p>
 
-<p><img src="/images/posts/sapui5/richeditor/tmc3.png" alt="TinyMCE" /></p>
+<pre><code>html.sap-desktop .sapMIBar.sapMFooter-CTX {
+    background-color: #ffffff;
+    border-top: 1px solid #ebebeb;
+}
+html.sap-desktop .sapContrast .sapMIBar.sapMFooter-CTX,html.sap-desktop .sapContrast.sapMIBar.sapMFooter-CTX {
+    background-color: #2f3c48;
+    border-top: 1px solid #475b6d;
+}
+</code></pre>
 
-<p><img src="/images/posts/sapui5/richeditor/tmc4.png" alt="TinyMCE 4" /></p>
+<p>А если собрать самому из исходников с github (<code>grunt build</code>):</p>
 
-<h1 id="custom-toolbar">Custom Toolbar</h1>
+<pre><code>html.sap-desktop .sapMIBar.sapMFooter-CTX {
+  background-color: #2f3c48;
+  border-top: 1px solid #475b6d;
+}
+</code></pre>
 
-<p>С версии 1.48 появилась возможность использовать <code>Custom Toolbar</code> по сути это Toolbar написаный на SapUI5 и синхронизующий свое состояние и состояние редактора. (В версии до 1.54 не синхронизуютра Images и Links)</p>
+<p>Цвет конечно правильный в обоих случаях но это интерестно <code>как так?</code></p>
 
-<p><img src="/images/posts/sapui5/richeditor/custom.png" alt="TinyMCE 4" /></p>
+<p>Причем в <code>less</code> файлах этого раздвоения нет и более того если собрать <code>less</code> без плагина <code>less-openui5</code>. Мы получим:</p>
 
-<h1 id="полезные-ссылки">Полезные ссылки</h1>
+<pre><code>html.sap-desktop .sapMIBar.sapMFooter-CTX {
+    background-color: #ffffff;
+    border-top: 1px solid #ebebeb;
+}
+</code></pre>
 
-<ul>
-<li><a href="https://sapui5.hana.ondemand.com/#/api/sap.ui.richtexteditor">API Reference</a></li>
-<li><a href="https://www.tinymce.com/">TinyMCE</a></li>
-</ul>
+<h1 id="maven-vs-grunt-openui5">Maven vs grunt-openui5</h1>
+
+<p><a href="https://github.com/SAP/less-openui5/blob/master/lib/scope.js">scope.js</a> и
+<a href="https://github.com/SAP/less-openui5/blob/master/lib/diff.js">diff.js</a></p>
+
+<p><code>.theming</code></p>
+
+<pre><code>{
+  &quot;sEntity&quot;: &quot;Theme&quot;,
+  &quot;sId&quot;: &quot;sap_belize&quot;,
+  &quot;oExtends&quot;: &quot;base&quot;,
+  &quot;sVendor&quot;: &quot;SAP&quot;,
+  &quot;aBundled&quot;: [&quot;sap_belize_plus&quot;],
+  &quot;mCssScopes&quot;: {
+    &quot;library&quot;: {
+      &quot;sBaseFile&quot;: &quot;library&quot;,
+      &quot;sEmbeddingMethod&quot;: &quot;APPEND&quot;,
+      &quot;aScopes&quot;: [
+        {
+          &quot;sLabel&quot;: &quot;Contrast&quot;,
+          &quot;sSelector&quot;: &quot;sapContrast&quot;,
+          &quot;sEmbeddedFile&quot;: &quot;sap_belize_plus.library&quot;,
+          &quot;sEmbeddedCompareFile&quot;: &quot;library&quot;,
+          &quot;sThemeIdSuffix&quot;: &quot;Contrast&quot;,
+          &quot;sThemability&quot;: &quot;PUBLIC&quot;,
+          &quot;aThemabilityFilter&quot;: [
+            &quot;Color&quot;
+          ],
+          &quot;rExcludeSelector&quot;: &quot;\\.sapContrastPlus\\W&quot;
+        }
+      ]
+    }
+  }
+}
+</code></pre>
 
         </div>
 
@@ -117,9 +154,12 @@
             <h3>Contents</h3>
             <nav id="TableOfContents">
 <ul>
-<li><a href="#общее-описание">Общее описание</a></li>
-<li><a href="#custom-toolbar">Custom Toolbar</a></li>
-<li><a href="#полезные-ссылки">Полезные ссылки</a></li>
+<li>
+<ul>
+<li><a href="#draft-false">draft: false</a></li>
+</ul></li>
+<li><a href="#начало-загадки">Начало загадки</a></li>
+<li><a href="#maven-vs-grunt-openui5">Maven vs grunt-openui5</a></li>
 </ul>
 </nav>
         </div>
@@ -171,15 +211,15 @@
     </div>
     <nav id="article-nav">
     
-    <a href="/posts/sapui5/control/custom/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/posts/sapui5/richeditor/" id="article-nav-newer" class="article-nav-link-wrap">
         <div class="article-nav-title"><span>&lt;</span>&nbsp;
-            SapUI5: Control - контрол из контролов
+            SapUI5: rich text editor
         </div>
     </a>
     
     
-    <a href="/posts/sapui5/note/themes/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">&nbsp;<span>&gt;</span></div>
+    <a href="/book/2018_tech/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Книги за 2018: Технические&nbsp;<span>&gt;</span></div>
     </a>
     
 </nav>
