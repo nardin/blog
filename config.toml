@@ -1,25 +1,18 @@
-baseURL = "http://havespacesuit.ru/"
-languageCode = "ru-ru"
-title = "Have Space Suit - Will Travel"
+baseURL = "http://mikhail.cz/"
+title = "Mikhail Mamaev"
 publishDir = "docs"
-theme = "hugo-theme-my"
+theme = "hugo-goa"
+author = "Mikhail Mamaev" 
 
 paginate = 10
 
-[[menu.main]]
-    name = "Прочитанные книги"
-    pre = "<i class='fa fa-road'></i>"
-    weight = -110
-    url = "/book/"
-
-[[menu.main]]
-    name = "Обо мне"
-    pre = "<i class='fa fa-heart'></i>"
-    weight = -100
-    identifier = "about"
-    url = "/about/"
-
 [params]
-    smartToc = true
-    disqusShortname = "disqus_f2Xxyvs38m"
-    googleAnalytics = "UA-3761048-11"
+author = "Mikhail Mamaev"
+intro = "Photographer and software engineer"
+description = ""
+authorimage = "avatar.jpg"
+dateformat = "Jan 2, 2006"
+
+[params.social]
+github = "nardin"
+instagram = "nardinroot"

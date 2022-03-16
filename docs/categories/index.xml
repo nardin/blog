@@ -1,23 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Have Space Suit - Will Travel</title>
-    <link>http://havespacesuit.ru/categories/</link>
-    <description>Recent content in Categories on Have Space Suit - Will Travel</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru-ru</language>
-    
-	<atom:link href="http://havespacesuit.ru/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Sapui5</title>
-      <link>http://havespacesuit.ru/categories/sapui5/</link>
-      <pubDate>Fri, 27 Apr 2018 01:13:36 +0400</pubDate>
-      
-      <guid>http://havespacesuit.ru/categories/sapui5/</guid>
-      <description></description>
-    </item>
-    
+    <title>Categories on Mikhail Mamaev</title>
+    <link>http://mikhail.cz/categories/</link>
+    <description>Recent content in Categories on Mikhail Mamaev</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://mikhail.cz/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
