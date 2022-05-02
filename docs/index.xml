@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mikhail Mamaev</title>
-    <link>http://mikhail.cz/</link>
+    <link>https://mikhail.cz/</link>
     <description>Recent content on Mikhail Mamaev</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="http://mikhail.cz/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://mikhail.cz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://mikhail.cz/about/</link>
+      <link>https://mikhail.cz/about/</link>
       <pubDate>Wed, 16 Mar 2022 23:00:33 +0100</pubDate>
       
-      <guid>http://mikhail.cz/about/</guid>
+      <guid>https://mikhail.cz/about/</guid>
       <description></description>
     </item>
     

@@ -1,4 +1,4 @@
-baseURL = "http://mikhail.cz/"
+baseURL = "https://mikhail.cz/"
 title = "Mikhail Mamaev"
 publishDir = "docs"
 theme = "hugo-goa"
